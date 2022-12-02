@@ -1,0 +1,36 @@
+#!/bin/sh
+#
+# Writes the final sources.list file
+#
+
+CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
+RELEASE="chimaera"
+#RELEASE="chimaera"
+
+cat << EOF > $CHROOT/etc/apt/sources.list
+# This system was installed using PeppermintOS removable media
+# (e.g. netinst, live or single CD). The matching "deb cdrom"
+# entries were removed at the end of the installation process.
+# For information about how to configure apt package sources,
+# see the sources.list(5) manual.
+
+# Main Repo - main contrib non-free
+deb http://deb.devuan.org/merged chimaera main contrib non-free
+#deb-src http://deb.devuan.org/merged chimaera main contrib non-free
+
+# Security Repo - main contrib non-free
+deb http://deb.devuan.org/merged chimaera-security main contrib non-free
+#deb-src http://deb.devuan.org/merged chimaera-security main contrib non-free
+
+# Updates Repo - main contrib non-free
+deb http://deb.devuan.org/merged chimaera-updates main contrib non-free
+#deb-src http://deb.devuan.org/merged chimaera-updates main contrib non-free
+
+# chimaera-backports, previously on backports.debian.org
+deb http://deb.devuan.org/merged chimaera-backports main contrib non-free
+#deb-src http://deb.devuan.org/merged chimaera-backports main contrib non-free
+
+
+EOF
+
+exit 0
