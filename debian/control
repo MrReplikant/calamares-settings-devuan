@@ -1,0 +1,25 @@
+Source: calamares-settings-devuan
+Section: utils
+Priority: optional
+Maintainer: MrReplikant
+Build-Depends: debhelper-compat (= 13), libglib2.0-bin
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+
+Package: calamares-settings-devuan
+Architecture: all
+Depends: calamares,
+         cryptsetup,
+         keyutils,
+         qml-module-qtquick-window2,
+         qml-module-qtquick2,
+         ${misc:Depends}
+Provides: calamares-settings
+Description: Debian theme and settings for the Calamares Installer
+ Calamares is a generic installer framework for Linux distributions.
+ By default, it contains a set of boilerplate wording and images. This
+ package provides the latest Debian artwork as well as scripts that
+ supports EFI installations.
+ .
+ It also serves as an example for how derivatives can create their own
+ calamares-settings packages.
