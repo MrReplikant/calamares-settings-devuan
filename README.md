@@ -5,8 +5,11 @@ This repository is created with the intent to lay the foundation for the package
 
 This Repo has 4 branches:
 Master
+
 4.0.0 -Chimaera
+
 5.0.0 -Daedalus
+
 Ceres
 
 version-specific commits will be pushed to their respective versions/branches, and not to master, unless it is a change in the framework itself. 
