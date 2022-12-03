@@ -14,11 +14,11 @@ strings:
     versionedName:       Devuan 4 (chimaera)
     shortVersionedName:  Devuan 4
     bootloaderEntryName: Devuan
-    productUrl:          https://debian.org
+    productUrl:          https://www.devuan.org/
     supportUrl:          https://www.debian.org/support
     knownIssuesUrl:      https://bugs.debian.org
     releaseNotesUrl:     https://www.debian.org/releases/bullseye/releasenotes
-    donateUrl:           https://www.debian.org
+    donateUrl:           https://www.devuan.org/os/donate.html
 
 images:
     productLogo:         "devuan-logo.png"
