@@ -1,3 +1,9 @@
+calamares-settings-devuan (4.0.0-2) unstable; urgency=medium
+
+  * Numerous Fixes
+
+ -- MrRepliaknt
+
 calamares-settings-devuan (4.0.0-1) unstable; urgency=medium
 
   * Initial build 
