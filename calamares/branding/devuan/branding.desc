@@ -9,9 +9,9 @@ windowPlacement: center
 strings:
     productName:         Devuan GNU/Linux
     shortProductName:    Devuan
-    version:             4 (chimaera)
+    version:             4 (Chimaera)
     shortVersion:        4
-    versionedName:       Devuan 4 (chimaera)
+    versionedName:       Devuan 4 (Chimaera)
     shortVersionedName:  Devuan 4
     bootloaderEntryName: Devuan
     productUrl:          https://www.devuan.org/
